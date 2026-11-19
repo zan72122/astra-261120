@@ -1,0 +1,168 @@
+{
+  "stepSeconds": 0.05,
+  "cells": 297,
+  "samples": 6883,
+  "metrics": {
+    "guideAt4_5": 0.8270927577082838,
+    "idle": {
+      "seconds": 10.000000000000076,
+      "noseIronBefore": 144.08383932050023,
+      "noseIronAfter": 153.63514349615446,
+      "steamPuffs": 5,
+      "dropMl": 0.3066666666666665,
+      "lanternDegrees": -0.0004040648304894487
+    },
+    "tail": {
+      "tailFirstMl": 6.103834569681027,
+      "noseFirstMl": 8.258258128988186e-242,
+      "duration": 1.65
+    },
+    "portions": {
+      "smallMl": 6.088912555226456,
+      "largeMl": 11.609825110452913
+    },
+    "setAt90": {
+      "skinMl": 1.829975383288681,
+      "meanSkinC": 88.31512831641052
+    },
+    "setAt175": {
+      "skinMl": 2.5852750430510074,
+      "meanSkinC": 126.91512356997067
+    },
+    "wings": {
+      "outsideMl": 0.6116810130353493,
+      "insideMl": 0,
+      "populated": 4
+    },
+    "short": {
+      "stages": [
+        "pour",
+        "fill",
+        "coat",
+        "close",
+        "flip",
+        "bake",
+        "rest",
+        "open",
+        "bag",
+        "gift",
+        "return"
+      ],
+      "cues": {
+        "sizzle": 200,
+        "wood": 7,
+        "iron": 3,
+        "baked": 1,
+        "peel": 19,
+        "paper": 10,
+        "snap": 1
+      },
+      "beanReachMm": -6.222222222222218,
+      "cutMl": 0,
+      "baked": 0.7506694265774614,
+      "eyeReleaseS": 0.949999999999946,
+      "tailReleaseS": 2.2999999999998693,
+      "wing": {
+        "thinMl": 0.1822036194533929,
+        "thickMl": 0.7686247919901682,
+        "thinCrack": 0.9797580885541957,
+        "thickCrack": 0
+      },
+      "loopS": 48.59999999999852
+    },
+    "long": {
+      "stages": [
+        "pour",
+        "fill",
+        "coat",
+        "close",
+        "flip",
+        "bake",
+        "rest",
+        "open",
+        "bag",
+        "gift",
+        "return"
+      ],
+      "cues": {
+        "sizzle": 205,
+        "wood": 7,
+        "iron": 3,
+        "baked": 1,
+        "peel": 19,
+        "paper": 10,
+        "snap": 1
+      },
+      "beanReachMm": 49.77777777777778,
+      "cutMl": 2.2903026743808,
+      "baked": 0.75059288673467,
+      "eyeReleaseS": 2.4499999999998607,
+      "tailReleaseS": 7.949999999999548,
+      "wing": {
+        "thinMl": 0.1822036194533929,
+        "thickMl": 0.7686247919901682,
+        "thinCrack": 0.9797580885541957,
+        "thickCrack": 0
+      },
+      "loopS": 54.64999999999818
+    },
+    "continuous": {
+      "seconds": 206.20000000005624,
+      "served": 4,
+      "nextLadleAcceptsTouch": true
+    },
+    "eyeReliefMm": {
+      "pastry": 6.722241638386148,
+      "iron": -6.117239890931395
+    }
+  },
+  "maxAdjacentWithinBatch": {
+    "iron": 0.5203279178505795,
+    "heat": 4.129305176223152,
+    "liquid": 0.08777545395875652,
+    "skin": 0.005158787177004132,
+    "water": 0.05725511829772219,
+    "toast": 0.00505978708247995,
+    "bean": 0.08045322436825814,
+    "coat": 0.07570251125781141,
+    "release": 0.12605427287608695
+  },
+  "units": {
+    "iron": "°C",
+    "heat": "°C",
+    "liquid": "mL",
+    "skin": "mL",
+    "water": "fraction",
+    "toast": "fraction",
+    "bean": "mL",
+    "coat": "fraction",
+    "release": "fraction"
+  },
+  "motionMax": {
+    "hingeDegrees": 3.2461043658331614,
+    "wingMassMl": 0.057436781736644196,
+    "crackRatio": 0.2591817793182821
+  },
+  "uniformNonzeroSteps": {
+    "iron": 0,
+    "heat": 0,
+    "liquid": 0,
+    "skin": 0,
+    "water": 0,
+    "toast": 0,
+    "bean": 0,
+    "coat": 0,
+    "release": 0
+  },
+  "maxAdjacentAcrossNewBatch": {
+    "iron": 0.02973718551595539,
+    "heat": 86.4875504839347,
+    "liquid": 0.01777547486771392,
+    "skin": 0.3426297166094607,
+    "water": 0.23719749484382646,
+    "toast": 0.9491333267353503,
+    "bean": 0.5593918276904233,
+    "coat": 0.9998236356996992,
+    "release": 0.9999999999999997
+  }
+}
