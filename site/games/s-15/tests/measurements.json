@@ -1,0 +1,391 @@
+{
+  "dt": 0.05,
+  "steps": "fixed 1/120 s",
+  "metrics": {
+    "idle": {
+      "seconds": 10,
+      "potInitial": 88,
+      "potFinal": 91.49541,
+      "dropGrowth": 0.028996,
+      "steamTravel": 0.372211,
+      "fogRange": 0.329604,
+      "volume": 0
+    },
+    "conditions": {
+      "lightVolume": 44,
+      "fullVolume": 132,
+      "lightRms": 0.266083,
+      "fullRms": 0.245268,
+      "firmRms": 0.013301,
+      "softPeak": 0.261277,
+      "firmPeak": 0.017036,
+      "afterRelease": 0.135695
+    },
+    "firstDrop": {
+      "mL": 0.796325,
+      "rings": 1
+    },
+    "thin": {
+      "volume": 19.156171,
+      "flux": 3.495059,
+      "rings": 11
+    },
+    "still": {
+      "flux": 0,
+      "rms": 0.027248
+    },
+    "slide": {
+      "velocity": 0.399298,
+      "rms": 0.373275,
+      "after": 0.282438
+    },
+    "glass": {
+      "meanBefore": 0.556502,
+      "meanAfter": 0.521035,
+      "beadBefore": 0.011,
+      "beadAfter": 0.111419,
+      "clear": 0.156563,
+      "startClear": 0.067236
+    },
+    "thermal": {
+      "edge": 65.700491,
+      "center": 48.056829,
+      "gap": 17.643662
+    },
+    "setting": {
+      "edge": 0.632909,
+      "center": 0.141636,
+      "gap": 0.491273,
+      "jigMm": 1.460794
+    },
+    "cool": {
+      "initial": 90.301999,
+      "final": 26.959933,
+      "meltMax": 0.304506,
+      "meltMin": 0.159696
+    },
+    "release": {
+      "popLift": 0.200825,
+      "syrupAt": 1.891667,
+      "shoulderAt": 5.341667,
+      "adheredMm": 22.408506,
+      "maxFront": 58,
+      "minFront": 6.927179,
+      "syrup": 6.08
+    },
+    "caramel": {
+      "right": 0.846324,
+      "left": -0.657904,
+      "trailBefore": 0.030103,
+      "trailAfter": 0.055327,
+      "massError": 0,
+      "front": 58,
+      "frontMin": 33.154657
+    },
+    "duration": 130.25,
+    "audio": {
+      "bubbleCount": 183,
+      "popCount": 1,
+      "popTime": 87.55,
+      "clinkCount": 1,
+      "clinkTime": 123.45
+    }
+  },
+  "phases": [
+    {
+      "stage": "slide",
+      "time": 16.35
+    },
+    {
+      "stage": "load",
+      "time": 18.95
+    },
+    {
+      "stage": "wipe",
+      "time": 23.25
+    },
+    {
+      "stage": "steam",
+      "time": 25.5
+    },
+    {
+      "stage": "jiggle",
+      "time": 55.05
+    },
+    {
+      "stage": "chill",
+      "time": 58.85
+    },
+    {
+      "stage": "plate",
+      "time": 70.95
+    },
+    {
+      "stage": "turn",
+      "time": 74.85
+    },
+    {
+      "stage": "lift",
+      "time": 84.75
+    },
+    {
+      "stage": "serve",
+      "time": 93.05
+    },
+    {
+      "stage": "receive",
+      "time": 121.75
+    },
+    {
+      "stage": "pour",
+      "time": 130.25
+    }
+  ],
+  "maxPerSample": {
+    "volume": {
+      "max": 1.85282,
+      "case": "serving",
+      "stage": "pour",
+      "time": 10.95
+    },
+    "jugMl": {
+      "max": 1.95,
+      "case": "serving",
+      "stage": "receive",
+      "time": 126.6
+    },
+    "custardLiftMm": {
+      "max": 5.224006,
+      "case": "serving",
+      "stage": "lift",
+      "time": 87.7
+    },
+    "tilt": {
+      "max": 0.092953,
+      "case": "serving",
+      "stage": "pour",
+      "time": 15.1
+    },
+    "drop": {
+      "max": 0.033673,
+      "case": "serving",
+      "stage": "pour",
+      "time": 9.9
+    },
+    "flux": {
+      "max": 3.765706,
+      "case": "serving",
+      "stage": "pour",
+      "time": 12.05
+    },
+    "moldX": {
+      "max": 0.022971,
+      "case": "44mL",
+      "stage": "slide",
+      "time": 0.45
+    },
+    "moldZ": {
+      "max": 0.043867,
+      "case": "serving",
+      "stage": "slide",
+      "time": 18.25
+    },
+    "push": {
+      "max": 0.01875,
+      "case": "serving",
+      "stage": "serve",
+      "time": 120.1
+    },
+    "lift": {
+      "max": 0.012272,
+      "case": "serving",
+      "stage": "lift",
+      "time": 86.75
+    },
+    "turn": {
+      "max": 0.022053,
+      "case": "serving",
+      "stage": "turn",
+      "time": 76.4
+    },
+    "heat": {
+      "max": 0.002822,
+      "case": "serving",
+      "stage": "steam",
+      "time": 43.4
+    },
+    "cold": {
+      "max": 0.606017,
+      "case": "serving",
+      "stage": "chill",
+      "time": 61.7
+    },
+    "fogCleared": {
+      "max": 0.010893,
+      "case": "serving",
+      "stage": "wipe",
+      "time": 25.2
+    },
+    "h": {
+      "max": 0.944592,
+      "case": "serving",
+      "stage": "pour",
+      "time": 10.7
+    },
+    "v": {
+      "max": 8.145794,
+      "case": "serving",
+      "stage": "pour",
+      "time": 14.45
+    },
+    "temp": {
+      "max": 0.945643,
+      "case": "serving",
+      "stage": "chill",
+      "time": 60.9
+    },
+    "gel": {
+      "max": 0.003388,
+      "case": "serving",
+      "stage": "steam",
+      "time": 37.5
+    },
+    "jig": {
+      "max": 0.582234,
+      "case": "serving",
+      "stage": "lift",
+      "time": 87.9
+    },
+    "fog": {
+      "max": 0.106074,
+      "case": "serving",
+      "stage": "wipe",
+      "time": 25.15
+    },
+    "beads": {
+      "max": 0.038204,
+      "case": "serving",
+      "stage": "wipe",
+      "time": 25.15
+    },
+    "film": {
+      "max": 0.000466,
+      "case": "serving",
+      "stage": "lift",
+      "time": 87.6
+    },
+    "frontMm": {
+      "max": 0.97828,
+      "case": "serving",
+      "stage": "lift",
+      "time": 87.6
+    },
+    "pool": {
+      "max": 0.001122,
+      "case": "serving",
+      "stage": "serve",
+      "time": 116.7
+    },
+    "run": {
+      "max": 0.000437,
+      "case": "serving",
+      "stage": "lift",
+      "time": 89.1
+    },
+    "trail": {
+      "max": 0.000247,
+      "case": "serving",
+      "stage": "serve",
+      "time": 117.65
+    },
+    "iceMass": {
+      "max": 0.003474,
+      "case": "serving",
+      "stage": "chill",
+      "time": 60.9
+    }
+  },
+  "newBatchBoundary": {
+    "volume": 136.128413,
+    "jugMl": 0,
+    "custardLiftMm": 0,
+    "tilt": 0,
+    "drop": 0.028787,
+    "flux": 0,
+    "moldX": 0.0008,
+    "moldZ": 1.1532,
+    "push": 1,
+    "lift": 0.96042,
+    "turn": 1,
+    "heat": 0.958289,
+    "cold": 5.580497,
+    "fogCleared": 0.000032,
+    "h": 0,
+    "v": 0,
+    "temp": 5.750066,
+    "gel": 0.98789,
+    "jig": 0,
+    "fog": 0.000095,
+    "beads": 0,
+    "film": 0.195923,
+    "frontMm": 58,
+    "pool": 0.086362,
+    "run": 0.044218,
+    "trail": 0.068196,
+    "iceMass": 0.304506
+  },
+  "spatialChecks": {
+    "temp": {
+      "moving": 3053,
+      "uniform": 0
+    },
+    "fog": {
+      "moving": 3053,
+      "uniform": 0
+    },
+    "h": {
+      "moving": 1351,
+      "uniform": 0
+    },
+    "v": {
+      "moving": 1356,
+      "uniform": 0
+    },
+    "beads": {
+      "moving": 1042,
+      "uniform": 0
+    },
+    "gel": {
+      "moving": 659,
+      "uniform": 0
+    },
+    "jig": {
+      "moving": 1421,
+      "uniform": 0
+    },
+    "iceMass": {
+      "moving": 171,
+      "uniform": 0
+    },
+    "film": {
+      "moving": 874,
+      "uniform": 0
+    },
+    "frontMm": {
+      "moving": 874,
+      "uniform": 0
+    },
+    "run": {
+      "moving": 874,
+      "uniform": 0
+    },
+    "pool": {
+      "moving": 873,
+      "uniform": 0
+    },
+    "trail": {
+      "moving": 806,
+      "uniform": 0
+    }
+  }
+}
