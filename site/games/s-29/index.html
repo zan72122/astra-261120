@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#d7b297">
+<link rel="icon" href="data:,">
+<title>ひかりの あめえ</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{width:100%;height:100%;margin:0;overflow:hidden;overscroll-behavior:none;background:#d5b89f}body{touch-action:none;user-select:none;-webkit-user-select:none}#table{width:100%;height:100%;height:100dvh;display:block;outline:none;touch-action:none}#sound{position:fixed;right:max(21px,env(safe-area-inset-right));top:max(20px,env(safe-area-inset-top));width:46px;height:46px;display:grid;place-items:center;background:#fcf3e4ed;border:1px solid #fff7e7;border-radius:50%;box-shadow:0 3px 12px #4b302c25,inset 0 0 0 3px #f6e8d4,inset 0 0 0 4px #c7ac8c;cursor:pointer;touch-action:manipulation}#sound canvas{width:30px;height:30px}#path{position:fixed;left:50%;bottom:max(22px,env(safe-area-inset-bottom));width:217px;height:49px;transform:translateX(-50%);pointer-events:none;background:linear-gradient(178deg,#fff6e7f5,#f3e4cdf5);border:1px solid #fff4dc;border-radius:28px;box-shadow:0 4px 17px #44332638,inset 0 0 0 3px #f4e7d2,inset 0 0 0 4px #ccb899}#path canvas{width:100%;height:100%}@media(max-width:520px){#path{width:194px;height:45px;bottom:max(15px,env(safe-area-inset-bottom))}#sound{width:42px;height:42px;right:14px;top:max(14px,env(safe-area-inset-top))}}
+</style>
+</head>
+<body>
+<canvas id="table" aria-label="おじいちゃんと一緒に飴で葉を描く石板"></canvas>
+<button id="sound" aria-label="音を切る" aria-pressed="false"><canvas width="90" height="90"></canvas></button>
+<div id="path" aria-hidden="true"><canvas width="645" height="141"></canvas></div>
+<script src="vendor/three.min.js"></script>
+<script src="sugar.js"></script>
+<script src="atelier.js"></script>
+<script src="play.js"></script>
+</body></html>
