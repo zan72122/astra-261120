@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#839c9b">
+<title>くるんといちご</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{width:100%;height:100%;overflow:hidden;margin:0;overscroll-behavior:none}body{background:#96aba8;touch-action:none;user-select:none}#workshop{position:absolute;inset:0;width:100%;height:100%;display:block;outline:none}#finish{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 45% 45%,transparent 48%,rgba(56,42,23,.12) 100%);box-shadow:inset 0 0 50px #71623c09}
+#sound,.steps{border:1px solid #fff3da;background:linear-gradient(145deg,#fff9e8,#f0e3c9);box-shadow:0 3px 0 #9e9277,0 7px 15px #30424132,inset 0 0 0 3px #f4ebd7,inset 0 0 0 4px #b2a58788}
+#sound{position:absolute;top:max(20px,env(safe-area-inset-top));right:max(22px,env(safe-area-inset-right));border-radius:50%;width:48px;height:48px;display:grid;place-items:center;cursor:pointer;color:#45676b}#sound svg{width:24px;height:24px}#sound:active{transform:translateY(2px)}#sound.muted .wave{display:none}#sound:not(.muted) .mute{display:none}
+.steps{position:absolute;left:50%;bottom:max(22px,env(safe-area-inset-bottom));transform:translateX(-50%);border-radius:40px;height:60px;padding:6px 13px;display:flex;align-items:center;gap:5px;pointer-events:none;color:#857f6e}
+.token{height:43px;width:43px;display:grid;place-items:center;border-radius:50%;transition:color .5s,background-color .5s,box-shadow .5s}.token svg{width:27px;height:27px;overflow:visible}.token.active{background-color:#42727b;color:#fff4d8;box-shadow:0 1px 0 #fff8e6,inset 0 0 0 1px #3d6871,inset 0 0 0 3px #81a3a5}.token.done{color:#466f71}.dot{width:3px;height:3px;border-radius:100%;background:#a99b7f}
+@media(max-width:550px){.steps{height:53px;padding:5px 11px;gap:4px;bottom:max(20px,env(safe-area-inset-bottom))}.token{width:37px;height:37px}.token svg{width:24px;height:24px}#sound{width:43px;height:43px;right:15px;top:max(15px,env(safe-area-inset-top))}}
+</style>
+<script defer src="vendor/three.min.js"></script><script defer src="model.js"></script><script defer src="atelier.js"></script><script defer src="audio.js"></script><script defer src="game.js"></script>
+</head>
+<body>
+<canvas id="workshop" aria-label="いちごのロールケーキをつくる台所"></canvas><div id="finish"></div>
+<button id="sound" aria-label="音の切り替え" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h3l5-4v14l-5-4H4z" fill="currentColor" stroke-width="1"/><path class="wave" d="M15.5 8.5q3 3.5 0 7M18.5 6q5 6 0 12"/><path class="mute" d="m16 9 5 6m0-6-5 6"/></svg></button>
+<div class="steps" aria-hidden="true">
+<span class="token active"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><g transform="rotate(42 16 16)"><rect x="14.1" y="1.8" width="3.8" height="13" rx="1.9" fill="currentColor" stroke="none"/><path d="M15 13h2l2.9 3.5v8.7q0 3.5-3.9 3.5t-3.9-3.5v-8.7z"/><path d="M14.6 19v5" stroke-linecap="round"/></g></svg></span><i class="dot"></i>
+<span class="token"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.1 11c-4.4 5.2 3 15.8 8.4 17.3C21 27 29 16.3 24.4 11c-2.2-2.2-5.2-2.2-8.5-.8C12.8 8.8 9.3 8.9 7.1 11Z"/><path d="m15.8 10-5.2-4.5 4.9 1.4L17 2l1.1 5.2 5.1-.4-5.6 3.7M11 14.4l.6 1.6m6.2-2.3-.2 1.6m4 2.1-.8 1.3m-6.6.5.5 1.6m2.6 2 .2.8"/></svg></span><i class="dot"></i>
+<span class="token"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.2 18c-2.7-3.7-6.1.9-3.5 3.4 4.1 4.1 10.4-1.4 7.2-7-4.4-7.5-15.7-2-12.2 7.1 2.6 6.9 10.7 7.7 15 3.5l5.9-5.4c5.2-5.4 1.2-13.4-4.6-14.2-3.2-.5-5.2.9-8.9 4.5"/></svg></span><i class="dot"></i>
+<span class="token"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5.4 18.7 13.8-8.4 7 4.5v7.9L5.4 24zM5.4 18.7l20.8-3.9M3 26c5.7 3.6 19.6 3.7 26-2.1"/><path d="M16.2 8.4c-2.4-4.5 3.7-6.8 5.3-3.7 2 3.5-3.7 7.1-5.3 3.7Z"/></svg></span>
+</div>
+</body></html>
